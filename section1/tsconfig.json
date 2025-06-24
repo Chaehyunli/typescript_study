@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 어떠한 방식으로 컴파일 할지
+    "module": "esnext", // 어떠한 방식으로 모듈 컴파일 방식을 사용 할지
+    "outDir": "dist", // tsc 컴파일 결과로 생성되는 js 파일을 dist 폴더에 저장
+    "strict": false, // 타입스크립트가 파일을 엄격하게 검사할지 아닌지 결정
+    "moduleDetection": "force", // 각 파일을 모두 전역(글로벌) 파일로 볼지(이 경우, 서로 다른 파일에 같은 이름의 변수 선언 x), 개별 파일(force)로 볼지
+    "skipLibCheck": true,
+  },
+  "include": ["src"] // tsc 컴파일 할 때 src 폴더 안에 있는 모든 파일을 컴파일 해라
+}
